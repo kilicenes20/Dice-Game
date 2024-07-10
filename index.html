@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Zar Oyunu</title>
+</head>
+
+<body>
+    <p id="score-player1" class="score active">0</p>
+    <p id="score-player2" class="score active">0</p>
+    <div class="container">
+        <audio id="background-music" loop>
+            <source src="groovy-ambient-funk-201745.mp3" type="audio/mpeg">
+        </audio>
+        <div class="front">
+            <p class="name">DİCEESSSS</p>
+            <img class="firstImg" src="dice.png" alt="dice">
+        </div>
+        <div class="menu">
+            <div class="menus">
+                <img class="menuImg" src="diceMenu.png">
+                <input type="text" name="player1" class="player" placeholder="Player1" autocomplete="off">
+                <input type="text" name="player2" class="player" placeholder="Player2" autocomplete="off">
+                <div class="con-btn">
+                    <button class="continue">Devam</button>
+                </div>
+            </div>
+        </div>
+        <div class="dice-container">
+            <h1>Shake It</h1>
+            <div class="game">
+                <span id="vol1" class="open">
+                    <i class="fa-solid fa-volume-high"></i>
+                </span>
+                <span id="vol2" class="close active">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </span>
+            </div>
+            <div class="dices">
+
+                <div class="dice">
+                    <p class="gamer">Player 1</p>
+                    <i class="fa-solid fa-dice-six one-dice"></i>
+                </div>
+                <div class="dice">
+                    <p class="gamer">Player 2</p>
+                    <i class="fa-solid fa-dice-six two-dice"></i>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn1">Başla</button>
+                <button class="refresh">Yenile</button>
+                <button class="btn2">Başla</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
